@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project-01</title>
+    
+    <!--Google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--font-awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+    <div class="nav-bar">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="infm d-flex align-items-center gap-2">
+            <p class="fs-5 m-0"><i class="fa-solid fa-phone-flip"></i></p>
+            <p class="fs-6 m-0">(060) 444 434 444</p>
+            <button class="navbar-toggler mboder" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="setting">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <div class="banner-area d-flex justify-content-between">
+          <div class="banner-text">
+            <h2 class="text-uppercase ">Hi, I'm a Freelancer</h2>
+            <h1 class="text-uppercase">Developer</h1>
+            <p>based in Los Angeles, USA.</p>
+            <a href="" class="v-btn">view my works</a>
+            <a href="" class="c-btn">contact me <i class="fa-regular fa-circle-down"></i></a>
+          </div>
+          <div class="banner-img ">
+            <img class="rounded-circle" src="img/web-developer.jpg" alt="">
+          </div>
+        </div>
+        <div class="down-icon text-center">
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="container">
+        <div class="title text-center">
+          <p class="text-capitalize d-inline-block">about me</p>
+          <h2 class="text-capitalize">know me more</h2>
+        </div>
+        <div class="about-text">
+          <div class="name-info d-flex">
+            <div class="name">
+              <h3>Hi, I'm <span>Callum Smith</span></h3>
+              <p>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.</p>
+            </div>
+            <div class="expert text-center ">
+              <div class="yellow d-flex justify-content-center align-items-center">
+                <h2>22</h2>
+              </div>
+              <h3 class="mt-4">Years of <span class="fw-bold">Experiance</span></h3>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="row">
+              <div class="col">
+                <h6>Name:</h6>
+                <h5>Callum Smith</h5>
+              </div>
+              <div class="col">
+                <h6>Email:</h6>
+                <a href="">chat@callum.com</a>
+              </div>
+              <div class="col">
+                <h6>Date of birth:</h6>
+                <h5>11 November, 1987</h5>
+              </div>
+              <div class="col">
+                <h6>From:</h6>
+                <h5>Los Angeles, USA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="container">
+        <div class="title text-center">
+          <p class="text-capitalize d-inline-block">What I Do?</p>
+          <h2 class="text-capitalize">How I can help your next project</h2>
+        </div>
+        <div class="project-item">
+          <div class="row pt-5">
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-palette"></i>
+              <h5>Graphic Design</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-display"></i>
+              <h5>Web Design</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <h5>UI/UX Design</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-paintbrush"></i>
+              <h5>App Design & Develop</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-chart-area"></i>
+              <h5>Business Analysis</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <h5>SEO Marketing</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting      industry. Lorem Ipsum has been the industry’s standard dummy text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume">
+      <div class="container">
+        <div class="title text-center pb-4">
+          <p class="text-capitalize d-inline-block">Resume</p>
+          <h2 class="text-capitalize">A summary of My Resume</h2>
+        </div>
+        <div class="row my-5">
+          <div class="edu col-6 pe-4">
+            <h2>My Education</h2>
+            <div class="edu-info">
+              <div class="ps-3">
+                <div class=" border-bottom mt-4 pb-3">
+                  <h3>Master in Computer Engineering</h3>      
+                  <p>Harvard University / 2015 - 2017</p>   
+                  <p class="dtls pe-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>  
+                </div>
+                <div class="border-bottom mt-4 pb-3">
+                  <h3>Bachelor in Computer Engineering</h3>      
+                  <p>University of California / 2014 - 2015</p>   
+                  <p class="dtls pe-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>  
+                </div>
+                <div class="border-bottom mt-4 pb-3">
+                  <h3>International Science</h3>      
+                  <p>Harvard University / 2013 - 2014</p>   
+                  <p class="dtls">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="exp col-6 ps-4">
+            <h2>My Experience</h2>
+            <div class="exp-info">
+              <div class="ps-3">
+                <div class="border-bottom mt-4 pb-3">
+                  <h3>Sr. Font End Developer</h3>
+                  <p>Apple Inc / 2020 - current</p>
+                  <p class="dtls">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+                <div class="border-bottom mt-4 pb-3">
+                  <h3>Jr. Font End Developer</h3>
+                  <p>Dribbble Inc / 2018 - 2020</p>
+                  <p class="dtls">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+                <div class="border-bottom mt-4 pb-3">
+                  <h3>HTML Developer</h3>
+                  <p>Adobe Inc / 2017 - 2018</p>
+                  <p class="dtls">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>My Skills</h2>
+          <div class="my-4">
+            <div class="row">
+              <div class="col-6 mb-3 pe-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>Web Design</p>
+                  <span>65%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 65%"></div>
+                </div>
+              </div>
+              <div class="col-6 mb-3 ps-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>HTML/CSS</p>
+                  <span>95%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="col-6 mb-3 pe-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>JavaScript</p>
+                  <span>80%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="col-6 mb-3 ps-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>React JS</p>
+                  <span>70%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="col-6 mb-3 pe-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>Angular Js</p>
+                  <span>60%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="col-6 mb-3 ps-4">
+                <div class="skill-text d-flex justify-content-between">
+                  <p>Bootstrap</p>
+                  <span>99%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 99%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-button text-center mt-5">
+            <a href="">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio">
+      <div class="container">
+        <div class="title text-center pb-4">
+          <p class="text-capitalize d-inline-block">Portfolio</p>
+          <h2 class="text-capitalize">Some of my most recent projects</h2>
+        </div>
+        <div class="my-project">
+          <ul class="nav nav-tabs our-nav border-0 justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active our-link border-0" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link our-link border-0" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="false">Details</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link our-link border-0" id="mockups-tab" data-bs-toggle="tab" data-bs-target="#mockups-tab-pane" type="button" role="tab" aria-controls="mockups-tab-pane" aria-selected="false">Mockups</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link our-link border-0" id="youtube-tab" data-bs-toggle="tab" data-bs-target="#youtube-tab-pane" type="button" role="tab" aria-controls="youtube-tab-pane" aria-selected="false">Youtube Videos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link our-link border-0" id="vimeo-tab" data-bs-toggle="tab" data-bs-target="#vimeo-tab-pane" type="button" role="tab" aria-controls="vimeo-tab-pane" aria-selected="false">Vimeo Videos</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+              <div class="protfolio-img">
+                <div class="row mt-5">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-1.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-file-lines pb-4"></i>
+                          <h5>Detailed project 1</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-2.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-image pb-4"></i>
+                          <h5>Mockups desigen1</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-3.png" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-video pb-4"></i>
+                          <h5>YouTube Video</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div> 
+                </div>
+                <div class="row mt-4">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-4.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-video pb-4"></i>
+                          <h5>Vimeo Video</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-5.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-file-lines pb-4"></i>
+                          <h5>Detailed project2</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-6.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-image pb-4"></i>
+                          <h5>Mockups desigen2</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div> 
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
+              <div class="protfolio-img">
+                <div class="row mt-5">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-1.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-file-lines pb-4"></i>
+                          <h5>Detailed project 1</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-5.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-file-lines pb-4"></i>
+                          <h5>Detailed project2</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="mockups-tab-pane" role="tabpanel" aria-labelledby="mockups-tab" tabindex="0">
+              <div class="protfolio-img">
+                <div class="row mt-5">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-2.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-image pb-4"></i>
+                          <h5>Mockups desigen1</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-6.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-image pb-4"></i>
+                          <h5>Mockups desigen2</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="youtube-tab-pane" role="tabpanel" aria-labelledby="youtube-tab" tabindex="0">
+              <div class="protfolio-img">
+                <div class="row mt-5">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-3.png" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-video pb-4"></i>
+                          <h5>YouTube Video</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="vimeo-tab-pane" role="tabpanel" aria-labelledby="vimeo-tab" tabindex="0">
+              <div class="protfolio-img">
+                <div class="row mt-5">
+                  <div class="col-4 ">
+                    <div class="position-relative overlay_h overflow-hidden">
+                      <img class="d-block" src="img/project-4.jpg" alt="">
+                      <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                        <div class="text-capitalize text-center">
+                          <i class="fa-solid fa-video pb-4"></i>
+                          <h5>Vimeo Video</h5>
+                          <p class="m0">category</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="work-bk">
+        <div class="container">
+          <div class="work-text text-center text-white">
+            <h2>Interested in working with me?</h2>
+            <a href="">Hire Me!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-lg-2">
+            <div class="faq-img px-5">
+              <img src="img/faq.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1">
+            <div class="faq-title ">
+              <h6>FAQ</h6>
+              <h2>Have any questions?</h2>
+            </div>
+            <div class="faq-q">
+              <div class="accordion accordion-flush my-faq" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What is Callum
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How can i help you
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      simple process for workflow?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                      is Callum a multi-purpose templet?
+                    </button>
+                  </h2>
+                  <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                      why responsive one page template?
+                    </button>
+                  </h2>
+                  <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="client">
+      <div class="container">
+        <div class="title text-center pb-4">
+          <p class="text-capitalize d-inline-block">Client Speak</p>
+          <h2 class="text-capitalize text-white">What Some of my Clients Say</h2>
+        </div>
+        <div class="client-slide">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="client_info text-white text-center">
+                  <p class="mx-auto "> “Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy text of the printing and typesetting industry.”</p>
+                  <img class="img-fluid d-inline-block w-auto rounded-circle shadow" src="img/client-1.png" alt="">
+                  <h6 class="mt-2">Jay Shah</h6>
+                  <span class="font-monospace mx-auto">Founder at Icomatic Pvt Ltd </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_info text-white text-center">
+                  <p class="mx-auto "> “I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure. simply dummy text of the printing and typesetting industry.”</p>
+                  <img class="img-fluid d-inline-block w-auto rounded-circle shadow" src="img/client-2.png" alt="">
+                  <h6 class="mt-2"> Patrick Cary</h6>
+                  <span class="font-monospace mx-auto">Freelancer from USA</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_info text-white text-center">
+                  <p class="mx-auto "> “Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
+                  <img class="img-fluid d-inline-block w-auto rounded-circle shadow" src="img/client-3.png" alt="">
+                  <h6 class="mt-2">Dennis Jacques</h6>
+                  <span class="font-monospace mx-auto">Noon Inc </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_info text-white text-center">
+                  <p class="mx-auto "> “I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. simply dummy text of the printing and typesetting industry. Excellent.”</p>
+                  <img class="img-fluid d-inline-block w-auto rounded-circle shadow" src="img/client-4.png" alt="">
+                  <h6 class="mt-2">Chris Tom</h6>
+                  <span class="font-monospace mx-auto">User from UK </span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-right"><i class="fa-solid fa-chevron-right"></i></i></div>
+            <div class="swiper-button-prev swiper-left"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="touch">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="touch-text">
+              <h2 class="">Let's get in touch</h2>
+              <p>I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
+              <h3 class="mt-5">Living In:</h3>
+              <address>30 Shacham street, Los Angeles, USA.</address>
+              <h3>Call:</h3>
+              <p>(+060) 444 434 444</p>
+              <ul class="p-0">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="touch-form">
+              <h2>Estimate your Project?</h2>
+              <div class="">
+                <form action="">
+                  <label for="" class="lab">What is Your Name:</label>
+                  <input type="text" class="form-control">
+                  <label for="" class="lab">Your Email Address:</label>
+                  <input type="email" class="form-control">
+                  <label for="" class="lab">How can I Help you?:</label>
+                  <textarea name="message" id="" rows="4" class="form-control"></textarea>
+                  <button class="sbtn">Send <i class="fa-solid fa-arrow-right ps-3"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="f-text text-white">
+              <p>Copyright © 2023 <a href="">Callum</a>. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="f-text text-end text-white">
+              <p>Designed by <a href="">Harnish Design</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+
+  </body>
+</html>

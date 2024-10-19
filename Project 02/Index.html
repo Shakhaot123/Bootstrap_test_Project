@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02</title>
+
+    <!--Google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--font-awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--My CSS-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Nav ber-->
+    <div class="nav-ber">
+        <div class="my-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="logo">
+                        <a href="https://undsgn.com/uncode/homepages/classic-agency/#" target="_blank">uncode</a>
+                    </div>
+                </div>
+                <div class=" col-7">
+                    <div class="my-menu">
+                        <ul>
+                          <li><a href="">Demos</a>
+                            <ul>
+                              <li><a href="">Demo_01</a></li>
+                              <li><a href="">Demo_02</a></li>
+                              <li><a href="">Demo_03</a></li>
+                              <li><a href="">Demo_04</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Features</a>
+                            <ul>
+                              <li><a href="">Features_01</a></li>
+                              <li><a href="">Features_02</a></li>
+                              <li><a href="">Features_03</a></li>
+                              <li><a href="">Features_04</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Works</a></li>
+                          <li><a href="">Blog</a>
+                            <ul>
+                              <li><a href="">Blog_01</a></li>
+                              <li><a href="">Blog_02</a></li>
+                              <li><a href="">Blog_03</a></li>
+                              <li><a href="">Blog_04</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Shop</a></li>
+                          <li><a href="">Page</a>
+                            <ul>
+                              <li><a href="">Page_01</a></li>
+                              <li><a href="">Page_02</a></li>
+                              <li><a href="">Page_03</a></li>
+                              <li><a href="">Page_04</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Extra</a>
+                            <ul>
+                              <li><a href="">Extra_01</a></li>
+                              <li><a href="">Extra_02</a></li>
+                              <li><a href="">Extra_03</a></li>
+                              <li><a href="">Extra_04</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="nav-icon">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">uncode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">uncode</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- banner-->
+    <div class="banner">
+        <div class="swiper banner_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-one">
+                    <div class="bg-gray">
+                        <div class=" text-center">
+                            <h2>We belive in timeless authentic web design</h2>
+                            <h4><a href="">Buy Now $59</a></h4>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-two">
+                    <div class="bg-gray ">
+                        <div class=" text-center">
+                            <h2>We create impressive web expreiences</h2>
+                            <h4><a href="">Buy Now $59</a></h4>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-three">
+                    <div class="bg-gray">
+                        <div class=" text-center">
+                            <h2>We belive in timeless authentic web design</h2>
+                            <h4><a href="">Buy Now $59</a></h4>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="work">
+        <div class="container">
+            <div class="work-title text-center">
+                <h3>Selected works</h3>
+                <p>We design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-menu">
+        <div class="">   
+            <div class="my-project">
+                <ul class="nav nav-tabs our-nav border-0 justify-content-center" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active our-link border-0" id="showall-tab" data-bs-toggle="tab" data-bs-target="#showall-tab-pane" type="button" role="tab" aria-controls="showall-tab-pane" aria-selected="true">Show All</button>
+                  </li>
+      
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link our-link border-0" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="false">Web</button>
+                  </li>
+      
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link our-link border-0" id="mockups-tab" data-bs-toggle="tab" data-bs-target="#mockups-tab-pane" type="button" role="tab" aria-controls="mockups-tab-pane" aria-selected="false">Adv</button>
+                  </li>
+      
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link our-link border-0" id="youtube-tab" data-bs-toggle="tab" data-bs-target="#youtube-tab-pane" type="button" role="tab" aria-controls="youtube-tab-pane" aria-selected="false">Branding</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link our-link border-0" id="vimeo-tab" data-bs-toggle="tab" data-bs-target="#vimeo-tab-pane" type="button" role="tab" aria-controls="vimeo-tab-pane" aria-selected="false">Design</button>
+                  </li>
+                  <li class="nav-item" role="presentation"></li>
+                    <button class="nav-link our-link border-0" id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo-tab-pane" type="button" role="tab" aria-controls="photo-tab-pane" aria-selected="false">Photo</button>
+                  </li>
+                </ul>
+                <div class="tab-content my_photo" id="myTabContent">
+                  <div class="tab-pane fade show active" id="showall-tab-pane" role="tabpanel" aria-labelledby="showall-tab" tabindex="0">
+                    <div class="work-photo row mt-3">  
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0">
+                        <div class=" ">
+                          <div class="position-relative overlay_h overflow-hidden">
+                            <img class="block overflow-hidden" src="img/1.webp" alt="">
+                            <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                              <div class="text-capitalize text-center">
+                                <h5>Brando</h5>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 ">
+                        <div class="position-relative overlay_h overflow-hidden">
+                          <img class="block overflow-hidden" src="img/2.webp" alt="">
+                          <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                            <div class="text-capitalize text-center">
+                              <h5>Givenchy</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 ">
+                        <div class="position-relative overlay_h overflow-hidden">
+                          <img class="block overflow-hidden" src="img/3.webp" alt="">
+                          <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                            <div class="text-capitalize text-center">
+                              <h5>Nike Air</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 ">
+                        <div class="position-relative overlay_h overflow-hidden">
+                          <img class="d-block" src="img/4.webp" alt="">
+                          <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                            <div class="text-capitalize text-center">
+                              <h5>Element Skateboard</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 ">
+                        <div class="position-relative overlay_h overflow-hidden">
+                          <img class="d-block" src="img/5.webp" alt="">
+                          <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                            <div class="text-capitalize text-center">
+                              <h5>Act+Acre</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 ">
+                        <div class="position-relative overlay_h overflow-hidden">
+                          <img class="d-block" src="img/6.webp" alt="">
+                          <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                            <div class="text-capitalize text-center">
+                              <h5>FH Joanneum</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="tab-pane fade" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
+                    <div class="work-photo d-flex  mt-3">  
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/2.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Givenchy</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/5.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Act+Acre</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+      
+                  <div class="tab-pane fade" id="mockups-tab-pane" role="tabpanel" aria-labelledby="mockups-tab" tabindex="0">
+                    <div class="work-photo d-flex  mt-3">  
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/1.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Brando</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/4.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Element Skateboard</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/6.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>FH Joanneum</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+      
+                  <div class="tab-pane fade" id="youtube-tab-pane" role="tabpanel" aria-labelledby="youtube-tab" tabindex="0">
+                    <div class="work-photo d-flex  mt-3">  
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/2.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Givenchy</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/3.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Nike Air</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/6.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>FH Joanneum</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+      
+                  <div class="tab-pane fade" id="vimeo-tab-pane" role="tabpanel" aria-labelledby="vimeo-tab" tabindex="0">
+                    <div class="work-photo d-flex  mt-3">  
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/1.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Brando</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/4.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Element Skateboard</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/5.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Act+Acre</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="photo-tab-pane" role="tabpanel" aria-labelledby="photo-tab" tabindex="0">
+                    <div class="work-photo d-flex  mt-3">  
+                        <div class=" ">
+                            <div class="position-relative overlay_h overflow-hidden">
+                              <img class="d-block" src="img/3.webp" alt="">
+                              <a href="#" class="overlay position-absolute top-0 left-0 w-100 h-100 d-flex   align-items-center justify-content-center text-decoration-none">
+                                <div class="text-capitalize text-center">
+                                  <h5>Nike Air</h5>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand">
+      <div class="container-lg container-md container">
+        <div class="brand-logo">
+          <div class="row">
+            <div class="col-lg-2 col-3"><img src="img/logo/1.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/2.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/3.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/4.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/5.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/6.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/7.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/8.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/9.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/10.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/11.webp" class="logo-size" alt=""></div>
+            <div class="col-lg-2 col-3"><img src="img/logo/12.webp" class="logo-size" alt=""></div>
+          </div>
+        </div>
+        <div class="founder">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 col-12">
+                <div class="ceo-text">
+                  <p> We’re a team of award-winning strategists, creatives, developers, designers writers, illustrators, animators + digital producers who crafts brands for the digital age. We specialize in bringing stunning creativity into the real world with a meaningful experience.”</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 pt-lg-0 pt-4 ">
+                <div class="ceo text-center">
+                  <div class="ceo-img">
+                    <img src="img/ceo.webp" alt="">
+                  </div>
+                  <h3>Mark Mils</h3>
+                  <h6>Founder & CEO</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-list">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>01. Branding</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>02. Development</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>03. Analysis</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-lg-4 mt-md-4 mt-0">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>04. Strategy</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>05. Marketing</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="d-flex">
+                <div class="work-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="icon-text">
+                  <h3>06. Social Media</h3>
+                  <p>This theme does everything you could possibly want it to do and, it is beautifully designed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <div class=" abc position-relative">
+        <img class=" " src="img/videos.webp" alt="">
+        <div class="video_s position-absolute">
+          <div class="video-icon ">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="container">
+        <div class="news-title text-center">
+          <h3>Latest News</h3>
+          <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
+        </div>
+        <div class="news-feed  pb-5">
+          <!-- Swiper -->
+          <div class="swiper news-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/1.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">18.09.2024</span>
+                    <a href="">We won another Mobile Excellence design award</a>
+                    <p>When you are alone for days or weeks at a time, you eventually become…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/11.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Jennifer Freeman</span>
+                          <span class="editor-title">Charming blogger</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/2.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">19.09.2024</span>
+                    <a href="">Our best tips and tricks to be productive at work</a>
+                    <p>Last year I wrote about why booking too far in advance can be…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/12.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by William Clark</span>
+                          <span class="editor-title">Travel enthusiast</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/3.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">17.09.2024</span>
+                    <a href="">Nominated as one of the best agency of the year</a>
+                    <p>Just the other day I happened to wake up early. That is unusual for…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/13.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Tim Drakenberg</span>
+                          <span class="editor-title">Thinker & designer</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/4.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">17.09.2024</span>
+                    <a href="">How to properly launch a new product</a>
+                    <p>Talking to randos is the norm. I’ll never forget the conversation…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/13.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Tim Drakenberg</span>
+                          <span class="editor-title">Thinker & designer</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/5.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">18.09.2024</span>
+                    <a href="">pecial Kudos for our latest design</a>
+                    <p>Just the other day I happened to wake up early. That is unusual for…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/11.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Jennifer Freeman</span>
+                          <span class="editor-title">Charming blogger</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/6.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">18.09.2024</span>
+                    <a href="">Featured on the most beautiful websites</a>
+                    <p>After designing my ideal week, I had a much clearer idea of how to…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/11.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Jennifer Freeman</span>
+                          <span class="editor-title">Charming blogger</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news-card text-start">
+                  <div class="news-img">
+                    <a href="">
+                      <img src="img/news/7.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="news-editor">
+                    <span class="d-block">17.09.2024</span>
+                    <a href="">The importance of Micro Design patterns</a>
+                    <p>Every selector has the potential to have unintended side effects by…</p>
+                    <a href="" class="editor">
+                      <div class="d-flex gap-3">
+                        <div class="editor-img">
+                          <img src="img/news/13.jpg" alt="">
+                        </div>
+                        <div >
+                          <span class="editor-name">by Tim Drakenberg</span>
+                          <span class="editor-title">Thinker & designer</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class=" ">
+          <div class="blog_button text-center">
+            <a href="">Visit the Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="connect ">
+                <h4>Connect</h4>
+                <ul>
+                  <li><a href="">hello@yourwebsite.com</a></li>
+                  <li><a href="">+(646) 245 234 98</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="navi">
+                <h4>Navigate</h4>
+                <ul>
+                  <li><a href="">Selected works</a></li>
+                  <li><a href="">Our services</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Awards</a></li>
+                  <li><a href="">Job opportunities</a></li>
+                  <li><a href="">News & insights</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="studio ">
+                <h4>Studio</h4>
+                <p>191 Middleville Road,
+                  NY 10001, New York
+                  United States
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <div class="net">
+                <h4>Network</h4>
+                <ul>
+                  <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".banner_swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+        });
+
+        
+        var swiper = new Swiper(".news-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 45,
+        },
+      },
+      });
+    </script> 
+</body>
+</html>
